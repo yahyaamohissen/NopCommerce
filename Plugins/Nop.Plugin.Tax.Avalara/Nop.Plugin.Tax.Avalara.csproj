@@ -36,7 +36,7 @@
     <None Remove="Views\Product\_ExportItemsButton.cshtml" />
     <None Remove="Views\Product\_ExportItemsForm.cshtml" />
     <None Remove="Views\Tax\Categories.cshtml" />
-    <None Remove="Views\_ViewImports.cshtml" />
+    <None Remove="Views\_ViewImports.Avalara.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -94,7 +94,7 @@
     <Content Include="Views\Tax\Categories.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewImports.cshtml">
+    <Content Include="Views\_ViewImports.Avalara.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

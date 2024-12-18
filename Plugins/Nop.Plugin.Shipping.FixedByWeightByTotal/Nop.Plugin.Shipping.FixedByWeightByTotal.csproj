@@ -27,7 +27,7 @@
     <None Remove="Views\_ByWeightByTotal.cshtml" />
     <None Remove="Views\_CreateOrUpdateRateByWeightByTotal.cshtml" />
     <None Remove="Views\_FixedRate.cshtml" />
-    <None Remove="Views\_ViewImports.cshtml" />
+    <None Remove="Views\_ViewImports.FixedByWeightByTotal.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,7 +55,7 @@
     <Content Include="Views\_FixedRate.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewImports.cshtml">
+    <Content Include="Views\_ViewImports.FixedByWeightByTotal.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

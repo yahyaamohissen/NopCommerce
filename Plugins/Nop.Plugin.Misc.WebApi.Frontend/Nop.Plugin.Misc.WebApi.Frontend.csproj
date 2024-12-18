@@ -23,7 +23,7 @@
     <None Remove="logo.png" />
     <None Remove="plugin.json" />
     <None Remove="Views\Configure.cshtml" />
-    <None Remove="Views\_ViewImports.cshtml" />
+    <None Remove="Views\_ViewImports.Frontend.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,7 +36,7 @@
     <Content Include="Views\Configure.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewImports.cshtml">
+    <Content Include="Views\_ViewImports.Frontend.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

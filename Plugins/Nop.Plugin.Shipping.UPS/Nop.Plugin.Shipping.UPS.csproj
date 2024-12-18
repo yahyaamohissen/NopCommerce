@@ -20,7 +20,7 @@
     <None Remove="logo.jpg" />
     <None Remove="plugin.json" />
     <None Remove="Views\Configure.cshtml" />
-    <None Remove="Views\_ViewImports.cshtml" />
+    <None Remove="Views\_ViewImports.UPS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.jpg">
@@ -32,7 +32,7 @@
     <Content Include="Views\Configure.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewImports.cshtml">
+    <Content Include="Views\_ViewImports.UPS.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
