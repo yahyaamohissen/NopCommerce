@@ -53,4 +53,4 @@ jobs:
           app-name: 'nopWA'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5BB561B0A35D446FA17DBBCEEFF8533D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9F802F4C3D324AC7B757485B281AFD81 }}
