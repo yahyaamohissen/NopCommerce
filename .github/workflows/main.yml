@@ -5,6 +5,10 @@ on:
     branches: 
     - main
 
+env: 
+  AZURE_WEBAPP_NAME: nopWA
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
+
 jobs: 
     publish:
       runs-on: ubuntu-latest
@@ -23,5 +27,12 @@ jobs:
          run: dotnet build ./NopCommerce.sln --configuration Release --no-restore 
 
         -name: Publish 
-         run: dotnet publish ./NopCommerce.sln --configuration Release --no-build
+         run: dotnet publish ./NopCommerce.sln --configuration Release --no-build --output '${{AZURE_WEBAPP_PACKAGE_PATH}}'
+
+        -name: Deployment
+         uses: azure/webapps-deploy@v2
+         with: 
+           app-name: ${{env.AZURE_WEBAPP_NAME}}
+           publish-profile: ${{SECRETS.AZURE_PUBLISH_PROFILE}}
+           package: "${{env.AZURE_WEBAPP_PACKAGE_PATH}}"
         
